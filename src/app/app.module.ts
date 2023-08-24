@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SaludadorComponent } from './saludador/saludador.component';
 import { DestinoViajeComponent } from './destino-viaje/destino-viaje.component';
 import { ListaDestinosComponent } from './lista-destinos/lista-destinos.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ListaDestinosComponent } from './lista-destinos/lista-destinos.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
