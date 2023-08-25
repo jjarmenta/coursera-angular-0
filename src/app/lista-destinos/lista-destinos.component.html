@@ -26,8 +26,9 @@
   <hr	class="mb-5">
   <div	class="row">
     <app-destino-viaje
-      *ngFor="let d of destinations"
+      *ngFor="let d of destinations; let i=index"
       [destination] = "d"
+      [position] = "i+1"
       (clicked)="favorite(d)"
     ></app-destino-viaje>
   </div>
