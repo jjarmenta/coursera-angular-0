@@ -17,4 +17,11 @@ export class ListaDestinosComponent {
     this.destinations.push(new DestinoViaje(name, url));
     return false;
   }
+
+  favorite(d: DestinoViaje) {
+    this.destinations.forEach(function (destination) {
+      destination.setSelected(false)
+    });
+    d.setSelected(true);
+  }
 }

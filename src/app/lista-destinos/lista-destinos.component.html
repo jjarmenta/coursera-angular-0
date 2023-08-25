@@ -25,6 +25,10 @@
   </div>
   <hr	class="mb-5">
   <div	class="row">
-    <app-destino-viaje *ngFor="let d of destinations" [destination] = "d"></app-destino-viaje>
+    <app-destino-viaje
+      *ngFor="let d of destinations"
+      [destination] = "d"
+      (clicked)="favorite(d)"
+    ></app-destino-viaje>
   </div>
 </div>

@@ -1,9 +1,14 @@
 export class DestinoViaje {
-  name: string;
-  url: string;
+  private selected: boolean;
+  constructor(public name: string, public url: string) {
+    this.selected = false;
+  }
 
-  constructor(name:string, url:string) {
-    this.name = name;
-    this.url = url;
+  isSelected(): boolean {
+    return this.selected;
+  }
+
+  setSelected(s: boolean){
+    this.selected = s;
   }
 }
