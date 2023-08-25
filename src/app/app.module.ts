@@ -7,13 +7,15 @@ import { SaludadorComponent } from './saludador/saludador.component';
 import { DestinoViajeComponent } from './destino-viaje/destino-viaje.component';
 import { ListaDestinosComponent } from './lista-destinos/lista-destinos.component';
 import {NgOptimizedImage} from "@angular/common";
+import { DetailDestinationComponent } from './detail-destination/detail-destination.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SaludadorComponent,
     DestinoViajeComponent,
-    ListaDestinosComponent
+    ListaDestinosComponent,
+    DetailDestinationComponent
   ],
   imports: [
     BrowserModule,
